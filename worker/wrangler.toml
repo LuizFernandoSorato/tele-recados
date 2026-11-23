@@ -4,8 +4,8 @@ compatibility_date = "2026-11-01"
 compatibility_flags = ["nodejs_compat"]
 
 [vars]
-# Troque SEU-USUARIO pelo seu usuário do GitHub.
-ORIGENS = "https://SEU-USUARIO.github.io,http://localhost:5173,http://localhost:4173"
+# Origens que podem chamar a IA (o navegador manda o host em minúsculas).
+ORIGENS = "https://luizfernandosorato.github.io,http://localhost:5173,http://localhost:4173"
 
 # 10 pedidos por minuto por IP
 [[ratelimits]]

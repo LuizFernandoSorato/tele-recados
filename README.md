@@ -14,7 +14,7 @@ e quem recebe ouve o recado narrado, com trilha sonora.
 
 ```bash
 npm install
-npm run dev          # http://localhost:5173/TeleRecados/
+npm run dev          # http://localhost:5173/tele-recados/
 npm test             # testes unitários (Vitest)
 npm run e2e          # testes ponta a ponta (Playwright: build + preview)
 ```
@@ -32,9 +32,8 @@ Na raiz, crie `.env.local` com `VITE_IA_URL=http://localhost:8787` (veja `.env.e
 
 ## Publicando
 
-1. **Site:** suba o repositório no GitHub com o nome `TeleRecados` (ou mude `base` em `vite.config.ts`).
-   Em *Settings → Pages*, escolha *Source: GitHub Actions*. Cada push na `main` publica em
-   `https://<usuario>.github.io/TeleRecados/`.
+1. **Site:** em *Settings → Pages* do repositório, escolha *Source: GitHub Actions*. Cada push na `main`
+   roda os testes e publica em `https://<usuario>.github.io/<repositório>/` (o caminho vem do nome do repositório).
 2. **IA (opcional):**
    ```bash
    cd worker
